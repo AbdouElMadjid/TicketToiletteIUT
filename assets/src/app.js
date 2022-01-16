@@ -3,4 +3,3 @@ import './webfonts.css'
 
 
 import "./components/Dashboard"
-console.log("asasd")
