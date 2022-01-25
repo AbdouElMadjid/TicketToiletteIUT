@@ -1,0 +1,186 @@
+.body-content 
+{
+    box-shadow: var(--shadow-double-small);
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.navbar-admin
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.navbar-admin .toggle-burger
+{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-admin .toggle-burger span
+{
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--color-white);
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.navbar-admin .toggle-burger span:nth-child(1)
+{
+    top: 23%;
+}
+
+.navbar-admin .toggle-burger span:nth-child(2)
+{
+    top: 50%;
+}
+
+.navbar-admin .toggle-burger span:nth-child(3)
+{
+    bottom: 20%;
+}
+
+.navbar-admin .search-data
+{
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    height: 40px;
+    width: 60%;
+}
+
+.search-data i
+{
+    color: var(--color-placeholder);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-data input
+{
+    height: 100%;
+    background-color: transparent;
+    color: var(--color-white);
+    font-family: "Monstreat";
+    border: none;
+    border-radius: 80px;
+}
+
+.search-data input::placeholder
+{
+    color: var(--color-placeholder);
+}
+
+.navbar-admin .avatar-user
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-gray-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.avatar-user i
+{
+    color: var(--color-white);
+    font-size: 25px;
+}
+
+.content
+{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.content table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content tr
+{
+    height: 55px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-gray-1);
+}
+
+.content tr:nth-child(even) 
+{
+    background-color: #fff1;
+}
+
+.content td, tr
+{
+    text-transform: capitalize;
+    color: var(--color-gray-3);
+}
+
+.content th
+{
+    font-size: 18px;
+}
+
+.content td
+{
+    font-size: 16px;
+}
+
+.content button
+{
+    border: none;
+    margin: 0 5px;
+    width: 26px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.edit
+{
+    background-color: var(--color-blue-5);
+}
+
+.remove
+{
+    background-color: var(--color-red-5);    
+
+}
+
+button i
+{
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.Valide
+{
+    background-color: var(--color-text-success);
+    display: block;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.Invalide
+{
+    display: block;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: var(--color-text-danger);
+}

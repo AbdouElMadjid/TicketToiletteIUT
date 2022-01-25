@@ -3,11 +3,9 @@
 namespace App\Entity;
 
 use DateTime;
-use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\TicketToiletteRepository;
 use DateInterval;
-use Symfony\Component\Validator\Constraints\Date;
 
 #[ORM\Entity(repositoryClass: TicketToiletteRepository::class)]
 class TicketToilette
@@ -25,7 +23,7 @@ class TicketToilette
 
 
 
-    #[ORM\OneToOne(mappedBy: 'ticketToilette', targetEntity: Etudiant::class, cascade: ['persist', 'remove'])]
+    #[ORM\OneToOne(inversedBy: 'ticketToilette', targetEntity: Etudiant::class, cascade: ['persist', 'remove'])]
     private $etudiant;
 
     #[ORM\Column(type: 'string', length: 50)]
@@ -36,7 +34,7 @@ class TicketToilette
         $date = new DateTime();
         $this->type = $type;
 
-        if ($this->type === "A") {
+        if ($this->type === "Y") {
             $this->expiratedAt = $date->add(new DateInterval('P1Y'));
         } else if ($this->type === "M") {
             $this->expiratedAt = $date->add(new DateInterval('P1M'));
@@ -72,23 +70,6 @@ class TicketToilette
         $this->expiratedAt = $expiratedAt;
 
         return $this;
-    }
-
-    public function getCategoy(): ?array
-    {
-        return $this->categoy;
-    }
-
-    public function setCategoy(array $categoy): self
-    {
-        $this->categoy = $categoy;
-
-        return $this;
-    }
-
-    public function getEtudiant(): ?Etudiant
-    {
-        return $this->etudiant;
     }
 
     public function setEtudiant(?Etudiant $etudiant): self

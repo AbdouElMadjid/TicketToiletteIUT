@@ -2,10 +2,22 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\EtudiantRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EtudiantRepository::class)]
+#[ApiResource(
+    itemOperations: [
+        "get" => [],
+        "put" => [],
+        "delete" => []
+    ],
+
+    collectionOperations: [
+        "get",
+    ]
+)]
 class Etudiant
 {
     #[ORM\Id]
@@ -22,7 +34,7 @@ class Etudiant
     #[ORM\Column(type: 'string', length: 255)]
     private $secondname;
 
-    #[ORM\OneToOne(inversedBy: 'etudiant', targetEntity: TicketToilette::class, cascade: ['persist', 'remove'])]
+    #[ORM\OneToOne(mappedBy: 'etudiant', targetEntity: TicketToilette::class, cascade: ['persist', 'remove'])]
     private $ticketToilette;
 
     public function getId(): ?int

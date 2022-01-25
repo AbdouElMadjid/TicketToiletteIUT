@@ -2,4 +2,4 @@ import "./_style.css"
 import './webfonts.css'
 
 
-import "./components/Dashboard"
+import "./components/Admin"

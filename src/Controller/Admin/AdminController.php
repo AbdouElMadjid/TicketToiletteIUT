@@ -2,6 +2,9 @@
 
 namespace App\Controller\Admin;
 
+use DateTime;
+use Doctrine\ORM\EntityManagerInterface;
+use Faker\Factory;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -9,16 +12,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @IsGranted("ROLE_ADMIN")
- * @Route("admin")
  */
 class AdminController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/", name="app_admin")
      */
-    public function index()
+    public function index(EntityManagerInterface $em)
     {
+
         return $this->render("admin/index.html.twig");
     }
 }

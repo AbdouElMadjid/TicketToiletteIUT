@@ -1,0 +1,201 @@
+:root, [data-color-mode="dark"][data-dark-theme="light"], [data-color-mode="light"][data-light-theme="light"] {
+    --color-black: #1f2229;
+    --color-white: #fff;
+    --color-gray-0: #fafbfc;
+    --color-gray-1: #f6f8fa;
+    --color-gray-2: #e1e4e8;
+    --color-gray-3: #d1d5da;
+    --color-gray-4: #959da5;
+    --color-gray-5: #6a737d;
+    --color-gray-6: #586069;
+    --color-gray-7: #444d56;
+    --color-gray-8: #2f363d;
+    --color-gray-9: #24292e;
+    --color-blue-0: #f1f8ff;
+    --color-blue-1: #dbedff;
+    --color-blue-2: #c8e1ff;
+    --color-blue-3: #49aee6;
+    --color-blue-4: #4d8ed8;
+    --color-blue-5: #367bf0;
+    --color-blue-6: #005cc5;
+    --color-blue-7: #044289;
+    --color-blue-8: #032f62;
+    --color-blue-9: #05264c;
+    --color-green-0: #f0fff4;
+    --color-green-1: #dcffe4;
+    --color-green-2: #bef5cb;
+    --color-green-3: #85e89d;
+    --color-green-4: #34d058;
+    --color-green-5: #16b597;
+    --color-green-6: #22863a;
+    --color-green-7: #176f2c;
+    --color-green-8: #198388;
+    --color-green-9: #144620;
+    --color-yellow-0: #fffdef;
+    --color-yellow-1: #fffbdd;
+    --color-yellow-2: #fff5b1;
+    --color-yellow-3: #ffea7f;
+    --color-yellow-4: #ffdf5d;
+    --color-yellow-5: #fea44c;
+    --color-yellow-6: #f9c513;
+    --color-yellow-7: #dbab09;
+    --color-yellow-8: #b08800;
+    --color-yellow-9: #735c0f;
+    --color-orange-0: #fff8f2;
+    --color-orange-1: #ffebda;
+    --color-orange-2: #ffd1ac;
+    --color-orange-3: #ffab70;
+    --color-orange-4: #fb8532;
+    --color-orange-5: #f66a0a;
+    --color-orange-6: #e36209;
+    --color-orange-7: #d15704;
+    --color-orange-8: #c24e00;
+    --color-orange-9: #a04100;
+    --color-red-0: #ffeef0;
+    --color-red-1: #ffdce0;
+    --color-red-2: #fdaeb7;
+    --color-red-3: #f97583;
+    --color-red-4: #ea4a5a;
+    --color-red-5: #d41919;
+    --color-red-6: #cb2431;
+    --color-red-7: #b31d28;
+    --color-red-8: #9e1c23;
+    --color-red-9: #86181d;
+    --color-purple-0: #f5f0ff;
+    --color-purple-1: #e6dcfd;
+    --color-purple-2: #d1bcf9;
+    --color-purple-3: #b392f0;
+    --color-purple-4: #8a63d2;
+    --color-purple-5: #962ac3;
+    --color-purple-6: #5a32a3;
+    --color-purple-7: #4c2889;
+    --color-purple-8: #3a1d6e;
+    --color-purple-9: #29134e;
+    --color-pink-0: #ffeef8;
+    --color-pink-1: #fedbf0;
+    --color-pink-2: #f9b3dd;
+    --color-pink-3: #f692ce;
+    --color-pink-4: #ec6cb9;
+    --color-pink-5: #ea4aaa;
+    --color-pink-6: #d03592;
+    --color-pink-7: #b93a86;
+    --color-pink-8: #99306f;
+    --color-pink-9: #6d224f;
+    --color-text-placeholder: #6a737d;
+    --color-text-disabled: #959da5;
+    --color-text-link: #0366d6;
+    --color-text-danger: #cb2431;
+    --color-text-success: #22863a;
+    --color-text-warning: #b08800;
+}
+
+:root
+{
+    --shadow-double-small: 0 0 2px #3232321a, 0 1px 3px #0000001a;
+    --shadow-double-meduim: 0px 2px 3px #3232321a, 0px 3px 8px #0000001a;
+    --shadow-double-large:  0px 1px 10px #3232321a, 1px 2px 35px #0000001a;
+    --shadow-double-extralarge: 0 1px 50px #3232321a, 0px 2px 55px #0000001a;
+    --shadow-special: -15px 0px 10px #439fd41a,
+                        -35px -5px 25px #439fd41a,
+                        -55px -50px 50px #439fd41a,
+                        -85px -65px 70px #439fd45a
+                        ;
+
+}
+
+:root
+{
+    --bg-transparent-0: #ffffff0a;
+    --bg-transparent-1: #ffffff1a;
+    --bg-transparent-2: #ffffff2a;
+    --bg-transparent-3: #ffffff3a;
+    --bg-transparent-4: #ffffff4a;
+    --bg-transparent-5: #ffffff5a;
+    --bg-transparent-6: #ffffff6a;
+    --bg-transparent-7: #ffffff7a;
+    --bg-transparent-8: #ffffff8a;
+    --bg-transparent-9: #ffffff9a;
+
+    --bg-dark: #1f2229;
+    --bg-light: #ffffff;
+    --bg-blue-0: #91cfec;
+    --bg-blue-1: #46a6cc;
+    --bg-blue-2: #096ea8;
+    --bg-blue-3: #125e9c;
+    --bg-blue-4: #124d9b;
+    --bg-blue-5: #19319e;
+    --bg-blue-6: #11226d;
+    --bg-blue-7: #111a4e;
+    --bg-blue-8: #0b0f44;
+    --bg-blue-9: #0a0324;
+
+    --bg-gray-0: #fafbfc;
+    --bg-gray-1: #f6f8fa;
+    --bg-gray-2: #e1e4e8;
+    --bg-gray-3: #d1d5da;
+    --bg-gray-4: #959da5;
+    --bg-gray-5: #6a737d;
+    --bg-gray-6: #586069;
+    --bg-gray-7: #444d56;
+    --bg-gray-8: #2f363d;
+    --bg-gray-9: #24292e;
+}
+
+/*
+    Default values
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face
+{
+    font-family: 'Monstreat';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: 'Monstreat';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+html,body
+{
+    font-family: "Monstreat";
+    line-height: 1.7;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+.container
+{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+li
+{
+    list-style: none;
+}

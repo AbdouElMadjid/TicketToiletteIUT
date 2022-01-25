@@ -1,5 +1,5 @@
 import React from "react"
 
-export default function Icon ({icon}) {
+export default function Icon({ icon }) {
     return <i className={"fa fa-" + icon} aria-hidden="true"></i>
 }
